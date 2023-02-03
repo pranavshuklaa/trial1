@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <form action="http://localhost:5000/chatbot" method="POST">
+      <label for="question">Enter your question:</label>
+      <input type="text" id="question" name="question">
+      <input type="submit" value="Predict">
+  </form>
+  {% if response %}
+      <p>Response: {{ response }}</p>
+  {% endif %}
+  
+  </body>
+</html>
